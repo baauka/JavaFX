@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="444.0" prefWidth="702.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project2fx.NewsPageController">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2b4d61" height="452.0" layoutX="-7.0" layoutY="-6.0" stroke="#39408e" strokeType="INSIDE" width="200.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#319e2b" height="3.0" layoutX="23.0" layoutY="156.0" stroke="#35a954" strokeType="INSIDE" width="143.0" />
+        <Text fill="WHITE" layoutX="15.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Here you can see the news!">
+            <font>
+                <Font name="Bookman Old Style" size="12.0" />
+            </font>
+        </Text>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#319e2b" height="3.0" layoutX="22.0" layoutY="375.0" stroke="#35a954" strokeType="INSIDE" width="143.0" />
+        <ImageView fitHeight="103.0" fitWidth="123.0" layoutX="43.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@fotos/newspaper.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="logOut" layoutX="625.0" layoutY="7.0" mnemonicParsing="false" onAction="#logOutAction" prefHeight="34.0" prefWidth="69.0" style="-fx-background-radius: 15;" text="Log Out">
+            <font>
+                <Font name="Bookshelf Symbol 7" size="14.0" />
+            </font>
+        </Button>
+        <MenuBar layoutX="46.0" layoutY="207.0" prefHeight="26.0" prefWidth="94.0" style="-fx-background-color: #FFF8DC;">
+            <menus>
+                <Menu mnemonicParsing="false" text="Technology">
+                    <items>
+                        <MenuItem fx:id="computers" mnemonicParsing="false" text="Computers" />
+                        <MenuItem fx:id="internet" mnemonicParsing="false" text="Internet" />
+                        <MenuItem fx:id="biotechnology" mnemonicParsing="false" text="Biotechnology" />
+                        <MenuItem fx:id="ai" mnemonicParsing="false" text="Artificial Intelligence" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <MenuBar layoutX="46.0" layoutY="247.0" prefHeight="26.0" prefWidth="94.0" style="-fx-background-color: #FFF8DC;">
+            <menus>
+                <Menu mnemonicParsing="false" text="Sports">
+                    <items>
+                        <MenuItem fx:id="football" mnemonicParsing="false" text="Football" />
+                        <MenuItem fx:id="armwrestling" mnemonicParsing="false" text="Armwrestling" />
+                        <MenuItem fx:id="basketball" mnemonicParsing="false" text="Basketball" />
+                        <MenuItem fx:id="box" mnemonicParsing="false" text="Box" />
+                    </items>
+                </Menu>
+            </menus>
+            <padding>
+                <Insets left="23.0" />
+            </padding>
+        </MenuBar>
+        <MenuBar layoutX="46.0" layoutY="285.0" prefHeight="26.0" prefWidth="94.0" style="-fx-background-color: #FFF8DC;">
+            <menus>
+                <Menu mnemonicParsing="false" text="Business">
+                    <items>
+                        <MenuItem fx:id="marketing" mnemonicParsing="false" text="Marketing" />
+                        <MenuItem fx:id="finance" mnemonicParsing="false" text="Finance" />
+                        <MenuItem fx:id="humanResources" mnemonicParsing="false" text="Human Resources" />
+                        <MenuItem fx:id="strategy" mnemonicParsing="false" text="Strategy" />
+                    </items>
+                </Menu>
+            </menus>
+            <padding>
+                <Insets left="17.0" />
+            </padding>
+        </MenuBar>
+        <MenuBar layoutX="46.0" layoutY="325.0" prefHeight="26.0" prefWidth="94.0" style="-fx-background-color: #FFF8DC;">
+            <menus>
+                <Menu mnemonicParsing="false" text="Economy">
+                    <items>
+                        <MenuItem fx:id="economicHistory" mnemonicParsing="false" text="Economic history" />
+                        <MenuItem fx:id="economicDevelopment" mnemonicParsing="false" text="Economic development" />
+                        <MenuItem fx:id="financialEconomics" mnemonicParsing="false" text="Financial economics" />
+                        <MenuItem fx:id="behavioralEconomics" mnemonicParsing="false" text="Behavioral economics" />
+                    </items>
+                </Menu>
+            </menus>
+            <padding>
+                <Insets left="16.0" />
+            </padding>
+        </MenuBar>
+        <ImageView fitHeight="197.0" fitWidth="312.0" layoutX="289.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@fotos/strategy.jpg" />
+            </image>
+        </ImageView>
+        <Text layoutX="248.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Companies are increasingly prioritizing sustainability in their business strategies, with a particular focus on reducing carbon emissions and mitigating climate change. Many firms are setting ambitious goals to achieve net-zero emissions by 2050 or earlier, and are implementing changes to their operations, supply chains, and products to achieve these targets. In addition, businesses are recognizing the importance of diversity and inclusion in their strategies, with efforts to improve representation at all levels and foster a more inclusive workplace culture." wrappingWidth="429.1908874511719">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="14.0" />
+            </font>
+        </Text>
+      <Button fx:id="aboutUs" layoutX="57.0" layoutY="401.0" mnemonicParsing="false" onAction="#aboutUsAction" style="-fx-background-radius: 15; -fx-background-color: #E6E6FA;" text="ABOUT US" />
+    </children>
+</AnchorPane>
