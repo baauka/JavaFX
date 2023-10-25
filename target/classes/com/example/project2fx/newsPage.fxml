@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="441.0" prefWidth="700.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project2fx.NewsPageController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2b4d61" height="452.0" layoutX="-7.0" layoutY="-6.0" stroke="#39408e" strokeType="INSIDE" width="200.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#319e2b" height="3.0" layoutX="23.0" layoutY="156.0" stroke="#35a954" strokeType="INSIDE" width="143.0" />
+      <Text fill="WHITE" layoutX="15.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Here you can see the news!">
+         <font>
+            <Font name="Bookman Old Style" size="12.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#319e2b" height="3.0" layoutX="22.0" layoutY="375.0" stroke="#35a954" strokeType="INSIDE" width="143.0" />
+      <ImageView fitHeight="103.0" fitWidth="123.0" layoutX="43.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@fotos/newspaper.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="logOut" layoutX="616.0" layoutY="15.0" mnemonicParsing="false" onAction="#logOutAction" prefHeight="34.0" prefWidth="69.0" style="-fx-background-radius: 15;" text="Log Out">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="209.0" layoutY="15.0" prefHeight="34.0" prefWidth="281.0" text="Welcome to the news page">
+         <font>
+            <Font name="Bernard MT Condensed" size="27.0" />
+         </font>
+      </Label>
+      <MenuBar layoutX="46.0" layoutY="207.0" prefHeight="26.0" prefWidth="94.0" style="-fx-background-color: #FFF8DC;">
+        <menus>
+          <Menu mnemonicParsing="false" text="Technology">
+            <items>
+              <MenuItem fx:id="computers" mnemonicParsing="false" onAction="#computersAction" text="Computers" />
+                  <MenuItem fx:id="internet" mnemonicParsing="false" onAction="#internetAction" text="Internet" />
+                  <MenuItem fx:id="biotechnology" mnemonicParsing="false" onAction="#bioTechAction" text="Biotechnology" />
+                  <MenuItem fx:id="ai" mnemonicParsing="false" onAction="#aiAction" text="Artificial Intelligence" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <MenuBar layoutX="46.0" layoutY="247.0" prefHeight="26.0" prefWidth="94.0" style="-fx-background-color: #FFF8DC;">
+         <menus>
+            <Menu mnemonicParsing="false" text="Sports">
+               <items>
+                  <MenuItem fx:id="football" mnemonicParsing="false" onAction="#footballAction" text="Football" />
+                  <MenuItem fx:id="armwrestling" mnemonicParsing="false" onAction="#armAction" text="Armwrestling" />
+                  <MenuItem fx:id="basketball" mnemonicParsing="false" onAction="#basketballAction" text="Basketball" />
+                  <MenuItem fx:id="box" mnemonicParsing="false" onAction="#boxAction" text="Box" />
+               </items>
+            </Menu>
+         </menus>
+         <padding>
+            <Insets left="23.0" />
+         </padding>
+      </MenuBar>
+      <MenuBar layoutX="46.0" layoutY="285.0" prefHeight="26.0" prefWidth="94.0" style="-fx-background-color: #FFF8DC;">
+         <menus>
+            <Menu mnemonicParsing="false" text="Business">
+               <items>
+                  <MenuItem fx:id="marketing" mnemonicParsing="false" onAction="#marketingAction" text="Marketing" />
+                  <MenuItem fx:id="finance" mnemonicParsing="false" onAction="#financeAction" text="Finance" />
+                  <MenuItem fx:id="humanResources" mnemonicParsing="false" onAction="#humanResourcesAction" text="Human Resources" />
+                  <MenuItem fx:id="strategy" mnemonicParsing="false" onAction="#strategyAction" text="Strategy" />
+               </items>
+            </Menu>
+         </menus>
+         <padding>
+            <Insets left="17.0" />
+         </padding>
+      </MenuBar>
+      <MenuBar layoutX="46.0" layoutY="325.0" prefHeight="26.0" prefWidth="94.0" style="-fx-background-color: #FFF8DC;">
+         <menus>
+            <Menu mnemonicParsing="false" text="Economy">
+               <items>
+                  <MenuItem fx:id="economicHistory" mnemonicParsing="false" onAction="#economicHistoryAction" text="Economic history" />
+                  <MenuItem fx:id="economicDevelopment" mnemonicParsing="false" onAction="#ecDevelopmentAction" text="Economic development" />
+                  <MenuItem fx:id="financialEconomics" mnemonicParsing="false" onAction="#financialEcAction" text="Financial economics" />
+                  <MenuItem fx:id="behavioralEconomics" mnemonicParsing="false" onAction="#behEcAction" text="Behavioral economics" />
+               </items>
+            </Menu>
+         </menus>
+         <padding>
+            <Insets left="16.0" />
+         </padding>
+      </MenuBar>
+      <ImageView fitHeight="151.0" fitWidth="235.0" layoutX="209.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@fotos/ronaldo.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="151.0" fitWidth="226.0" layoutX="458.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@fotos/istockphoto-1311148884-612x612.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="151.0" fitWidth="233.0" layoutX="209.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@fotos/image.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="151.0" fitWidth="226.0" layoutX="455.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@fotos/juanjo-jaramillo-mZnx9429i94-unsplash-scaled.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="aboutUs" layoutX="58.0" layoutY="401.0" mnemonicParsing="false" onAction="#aboutUsAction" style="-fx-background-radius: 15; -fx-background-color: #E6E6FA;" text="ABOUT US" />
+   </children>
+</AnchorPane>
